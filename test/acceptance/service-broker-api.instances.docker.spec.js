@@ -53,7 +53,7 @@ describe('service-broker-api', function () {
           expect(docker.portRegistry.getPorts('tcp')).to.eql([33331].concat(usedPorts));
         });
       });
-      
+
       describe('#provision', function () {
         it('returns 201 Created', function () {
           mocks.cloudController.createSecurityGroup(instance_id);
