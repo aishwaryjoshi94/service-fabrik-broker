@@ -33,3 +33,6 @@ script:
   - "npm run -s jshint-ci"
   - "npm run -s test-ci"
   - "npm run -s jsdoc"
+branches:
+ only:
+ - travis-setup
